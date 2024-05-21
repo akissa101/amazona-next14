@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'bg-slate-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-screen',
+          'bg-slate-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-screen f',
           poppins.className
         )}
       >
