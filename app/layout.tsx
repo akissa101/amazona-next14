@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import React from 'react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'bg-slate-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-screen f',
+          'bg-slate-200 dark:bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-slate-900 dark:text-slate-100 h-screen f',
           poppins.className
         )}
       >

@@ -1,7 +1,8 @@
 'use client';
 
-import { MonitorOffIcon, Moon, SunIcon } from 'lucide-react';
+import { Moon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import React from 'react';
 
 const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useTheme();

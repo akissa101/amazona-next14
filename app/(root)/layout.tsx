@@ -1,6 +1,7 @@
-import Header from '@/components/ui/shared/header';
-import Footer from '@/components/ui/shared/footer';
-import Providers from '@/components/ui/shared/Providers';
+import Header from '@/components/shared/header';
+import Footer from '@/components/shared/footer';
+import Providers from '@/components/shared/Providers';
+import React from 'react';
 
 export default function RootLayout({
   children,

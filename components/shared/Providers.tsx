@@ -2,7 +2,7 @@
 
 // import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from 'next-themes';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 type Props = { children: React.ReactNode };
 
