@@ -1,16 +1,12 @@
-// import { Button } from '@/components/ui/button';
 import ProductList from '@/components/shared/product/product-list';
+import { getLatestProducts } from '@/lib/actions/product';
 
-import sampleData from '@/lib/sample-data';
-
-export default function Home() {
+export default async function Home() {
+  const latestProducts = await getLatestProducts();
   return (
-    <div>
-      {/* <Button>Button</Button> */}
-      <div className="space-y-8">
-        <h2 className="h2-bold">Latest Products</h2>
-        <ProductList data={sampleData.products} />
-      </div>
+    <div className="space-y-8">
+      <h2 className="h2-bold">Latest Products</h2>
+      <ProductList title="Newest Arrivals" data={latestProducts} />
     </div>
   );
 }

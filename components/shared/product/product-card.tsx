@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Product } from '@/types';
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
-const ProductCard = ({ product }: { product: any }) => {
+const ProductCard = ({ product }: { product: Product }) => {
   return (
     <Card className="w-full max-w-sm dark:bg-slate-900 shadow-md shadow-slate-700 transition-all duration-500 hover:scale-105">
       <CardHeader className="p-0 items-center">
